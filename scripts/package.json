@@ -2,9 +2,9 @@
   "name": "email-notification-system",
   "version": "1.0.0",
   "description": "Sistema de notificaciones por email usando GitHub Actions",
-  "main": "send-email.js",
+  "main": "enviar_email.js",
   "scripts": {
-    "send": "node send-email.js"
+    "send": "node enviar_email.js"
   },
   "dependencies": {
     "nodemailer": "^6.9.7"

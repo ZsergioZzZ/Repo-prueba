@@ -4,7 +4,7 @@ on:
   workflow_dispatch:  # Permite ejecutar manualmente
 
 jobs:
-  send-email:
+  enviar-email:
     runs-on: ubuntu-latest
     
     steps:
@@ -27,8 +27,8 @@ jobs:
       # 4. Ejecutar el script de envío de email
       - name: Enviar email
         env:
-          EMAIL_USER: ${{ secrets.EMAIL_USER }}
-          EMAIL_APP_PASSWORD: ${{ secrets.EMAIL_APP_PASSWORD }}
+          EMAIL_USER: ${{ secrets['EMAIL_USER'] }}
+          EMAIL_APP_PASSWORD: ${{ secrets['EMAIL_APP_PASSWORD'] }}
         run: |
           cd scripts
-          node send-email.js
+          node enviar_email.js
