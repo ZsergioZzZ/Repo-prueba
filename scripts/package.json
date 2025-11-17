@@ -1,0 +1,12 @@
+{
+  "name": "email-notification-system",
+  "version": "1.0.0",
+  "description": "Sistema de notificaciones por email usando GitHub Actions",
+  "main": "send-email.js",
+  "scripts": {
+    "send": "node send-email.js"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.7"
+  }
+}
