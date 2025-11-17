@@ -1,0 +1,11 @@
+name: Prueba email workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test-action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hola desde GitHub Actions
+        run: echo "¡Workflow ejecutado exitosamente!"
